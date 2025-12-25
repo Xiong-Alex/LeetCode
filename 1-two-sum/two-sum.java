@@ -22,7 +22,7 @@ class Solution {
 // 1 ) Sort nums
 // then use two pointers <left, right> and inc/dec till you get target
 
-// 2 ) HashMap
+// 2 ) HashMap (Optimal, one pass)
 // Iterate through arr, check map for diff (target - nums[i]), if diff doesnt exist add <nums[i], i> to map and continue
 // This works because we can check the required difference value/index, and we only add the current value/index to the hashmap
 // after we check, so we dont have to worry about duplicates.
