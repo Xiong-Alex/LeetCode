@@ -5,10 +5,7 @@ class Solution {
         int right = numbers.length - 1;
 
         while(left < right) {
-            int leftVal = numbers[left];
-            int rightVal = numbers[right];
-
-            int total = leftVal + rightVal;
+            int total = numbers[left] + numbers[right];
 
             if(total < target) {
                 left++;
