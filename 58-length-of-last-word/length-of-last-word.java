@@ -20,7 +20,7 @@ class Solution {
     }
 }
 
-// or do a single pass and count l
+// or just bamm, but slower
 
 // String[] words = s.split("\\s");
 // return words[words.length - 1].length();
