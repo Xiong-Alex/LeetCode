@@ -12,8 +12,8 @@ and sub.subject_name = e.subject_name
 -- dont fully understand all 3 groups
 group by 
     s.student_id,
-    sub.subject_name,
-    s.student_name
+    sub.subject_name
+    -- s.student_name
 
 order by 
     s.student_id, sub.subject_name;
