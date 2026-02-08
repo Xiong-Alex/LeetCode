@@ -1,16 +1,17 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
 
-        map = {}
+        num_set = {}
 
-        for i, num in enumerate(nums):
+        for index, num in enumerate(nums):
             diff = target - num
 
-            if diff in map:
-                return [i, map[diff]]
-            else:
-                map[num] = i
+            if diff in num_set:
+                #NeetCode requires it to be sorted
+                #more eff w/an if else but, thisis fine
+                return sorted([index, num_set[diff]])
 
+            num_set[num] = index
 
-# Enumerate() turns list into tuple (index, value)
-# dictionary doesnt have contains, but it has 'in' 
+        #default empty
+        return []
