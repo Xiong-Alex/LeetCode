@@ -1,5 +1,7 @@
 class Solution:
     def mySqrt(self, x: int) -> int:
-        return int(x ** .5)
+        return int(x ** .5) # still built in...
 
+
+# int(x ** .5)
 # int(math.sqrt(x))
